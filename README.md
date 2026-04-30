@@ -13,6 +13,7 @@ This project focuses on variadic functions, format parsing, and  output handling
 ### Compilation
 ```bash
 cc -Wall -Wextra -Werror *.c
+```
 
 ## Library Creation
 
