@@ -20,6 +20,7 @@ You can also create a library:
 
 ```bash
 ar rcs libftprintf.a *.o
+```
 
 ## Algorithm Explanation
 
