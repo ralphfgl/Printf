@@ -6,7 +6,7 @@
 /*   By: rfeghali <rfeghali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/30 10:52:50 by rfeghali          #+#    #+#             */
-/*   Updated: 2026/04/30 12:18:08 by rfeghali         ###   ########.fr       */
+/*   Updated: 2026/04/30 15:39:32 by rfeghali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ int	ft_print_number(int n)
 {
 	char	*nb;
 	int		len;
-	
+
 	nb = ft_itoa(n);
 	len = ft_print_str(nb);
 	free(nb);
