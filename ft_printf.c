@@ -6,7 +6,7 @@
 /*   By: rfeghali <rfeghali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 19:04:56 by rfeghali          #+#    #+#             */
-/*   Updated: 2026/04/30 15:23:13 by rfeghali         ###   ########.fr       */
+/*   Updated: 2026/04/30 15:47:04 by rfeghali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,13 @@ static size_t	ft_parse_format(char fmt, va_list args)
 	return (len);
 }
 
-int ft_printf(const char *fmt, ...)
+int	ft_printf(const char *fmt, ...)
 {
 	va_list	args;
 	size_t	len;
 	size_t	i;
 
-	va_start(args, fmt); 
+	va_start(args, fmt);
 	len = 0;
 	i = 0;
 	while (fmt[i])
