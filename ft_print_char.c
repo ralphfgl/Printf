@@ -6,10 +6,13 @@
 /*   By: rfeghali <rfeghali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 12:21:24 by rfeghali          #+#    #+#             */
-/*   Updated: 2026/04/29 12:21:29 by rfeghali         ###   ########.fr       */
+/*   Updated: 2026/04/30 10:51:43 by rfeghali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-
+int	ft_print_char(char c)
+{
+	return (write(1, &c, 1));
+}

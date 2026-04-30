@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rfeghali <rfeghali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/28 19:05:50 by rfeghali          #+#    #+#             */
-/*   Updated: 2026/04/29 12:42:15 by rfeghali         ###   ########.fr       */
+/*   Created: 2026/04/20 19:02:25 by rfeghali          #+#    #+#             */
+/*   Updated: 2026/04/30 14:36:43 by rfeghali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <stdarg.h>
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
 
-int		ft_print_char(char c);
-int		ft_print_str(char *s);
-int		ft_print_number(int n);
-int		ft_print_unsigned(unsigned u);
-int		ft_print_addr(unsigned long long addr);
-int		ft_print_hexa(unsigned long long hex);
-int		ft_printf(const char *fmt, ...);
-
-#endif
+	if (!s)
+		return (0);
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
